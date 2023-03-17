@@ -2,7 +2,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
-DEFAULT_IMAGE_URL = ""
+DEFAULT_IMAGE_URL = "https://pygmypets.com/wp-content/uploads/2018/08/miniature-donkey.jpg"
 
 def connect_db(app):
     """ Connect to database. """
