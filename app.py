@@ -36,7 +36,7 @@ def add_pet():
         notes = form.notes.data
 
         flash(f"Added {name}!")
-        return redirect("/add")
+        return redirect("/")
     
     else:
         return render_template("add_pet.html", form=form)
