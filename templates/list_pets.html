@@ -7,15 +7,14 @@
     {% for pet in pets %}
     <div>
         <p><img src="{{pet.photo_url}}"></p>
-        {{pet.name}} is 
-        {% if {{pets.available}} %} <b>available!</b>
+        <a href="/{{ pet.id }}">{{pet.name}}</a> is
+        {% if pet.available %} <b>available!</b>
         {% else %} not available!
         {% endif %}
     </div>
     {% endfor %}
 
-
-    <form action="/pet/new">
-        <button type="submit" class="btn btn-secondary">Add a Pet</button>
-    </form>
+    <a href="/add" class="btn btn-secondary">
+        Add a Pet
+    </a>
 {% endblock %}

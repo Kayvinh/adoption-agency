@@ -39,7 +39,7 @@ class Pet(db.Model):
     )
 
     age = db.Column(
-        db.String(10).in_(['baby', 'young', 'adult', 'senior']),
+        db.String(10),
         nullable=False
     )
 
